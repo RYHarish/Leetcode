@@ -7,26 +7,23 @@ class Solution:
         
         rows, cols = len(grid), len(grid[0])
         island_count = 0
-        
-        directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-        
-        def bfs(r, c):
-            queue = deque()
-            queue.append((r, c))
-            grid[r][c] = '0'  
+                
+        def dfs(r, c):
             
-            while queue:
-                x, y = queue.popleft()
-                for direction in directions:
-                    new_x, new_y = x + direction[0], y + direction[1]
-                    if 0 <= new_x < rows and 0 <= new_y < cols and grid[new_x][new_y] == '1':
-                        grid[new_x][new_y] = '0'  
-                        queue.append((new_x, new_y))
-        
+            if r < 0 or c < 0 or r >= len(grid) or c >= len(grid[0]) or grid[r][c] == '0':
+                return
+
+            grid[r][c] = '0'
+            
+            dfs(r + 1, c)
+            dfs(r - 1, c)
+            dfs(r, c + 1)
+            dfs(r, c - 1)
+            
         for r in range(rows):
             for c in range(cols):
                 if grid[r][c] == '1': 
                     island_count += 1
-                    bfs(r, c)
+                    dfs(r, c)
         
         return island_count
