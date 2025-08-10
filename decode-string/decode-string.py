@@ -5,23 +5,25 @@ class Solution(object):
         :rtype: str
         """
         stack = []
-    
-        for char in s:
-            if char != ']':
-                stack.append(char)
+        curr_str = ""
+        
+        curr_num =0
+
+        for c in s:
+            if c.isdigit():
+                curr_num = curr_num * 10 + int(c)
+            elif c == '[':
+                stack.append(curr_num)
+                stack.append(curr_str)
+                curr_num = 0
+                curr_str = ""
+            elif c == ']':
+                prev_str = stack.pop()
+                prev_num = stack.pop()
+                curr_str = prev_str + curr_str * prev_num
             else:
-                decoded_string = []
-                while stack and stack[-1] != '[':
-                    decoded_string.append(stack.pop())
-                stack.pop()
-           
-                k = []
-                while stack and stack[-1].isdigit():
-                    k.append(stack.pop())
-                repeat_count = int(''.join(reversed(k)))
-            
-                repeated = ''.join(reversed(decoded_string)) * repeat_count
-                stack.extend(repeated)
-                print(stack)
-    
-        return ''.join(stack)
+                curr_str += c
+        while stack:
+            curr_str = stack.pop() + curr_str
+
+        return curr_str
