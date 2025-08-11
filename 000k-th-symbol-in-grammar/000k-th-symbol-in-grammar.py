@@ -5,17 +5,10 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        def kth(k, n):
-            if n == 0:
-                return 0
-            
-            if k%2 == 0 and kth(k//2, n-1) == 0:
-                return 0
-            elif k%2 == 1 and kth(k//2, n-1) == 0:
-                return 1
-            elif k%2 == 0 and kth(k//2, n-1) == 1:
-                return 1
-            elif k%2 == 1 and kth(k//2, n-1) == 1:
-                return 0
-            
-        return kth(k-1, n-1)
+        if n == 1:
+            return 0
+        parent = self.kthGrammar(n - 1, (k + 1) // 2)
+        if k % 2 == 1: 
+            return parent
+        else:
+            return 1 - parent
