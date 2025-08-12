@@ -4,23 +4,28 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        def max_heapify(heap_size, index):
-            left, right = 2*index+1, 2*index+2
-            largest = index
-            if left < heap_size and nums[left] > nums[largest]:
-                largest = left
-            if right < heap_size and nums[right] > nums[largest]:
-                largest = right
-            if largest != index:
-                nums[largest], nums[index] = nums[index], nums[largest]
-                max_heapify(heap_size, largest)
+        if len(nums) <= 1:
+            return nums
         
+        pivot = len(nums) // 2
+        left_list = self.sortArray(nums[:pivot])
+        right_list = self.sortArray(nums[pivot:])
         
-        for i in range(len(nums) //2 -1, -1, -1):
-            max_heapify(len(nums), i)
+        return self.merge(left_list, right_list)
         
-        for i in range(len(nums)-1, 0, -1):
-            nums[0], nums[i] = nums[i], nums[0]
-            max_heapify(i, 0)
+    def merge(self, left_list, right_list):
+        res = []
+        left_cursor = right_cursor = 0
         
-        return nums
+        while left_cursor < len(left_list) and right_cursor < len(right_list):
+            if left_list[left_cursor] < right_list[right_cursor]:
+                res.append(left_list[left_cursor])
+                left_cursor += 1
+            else:
+                res.append(right_list[right_cursor])
+                right_cursor += 1
+        
+        res.extend(left_list[left_cursor:])
+        res.extend(right_list[right_cursor:])
+        
+        return res
