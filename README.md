@@ -23,4 +23,20 @@
 |  |
 | ------- |
 | [3483-unique-3-digit-even-numbers](https://github.com/RYHarish/Leetcode/tree/master/3483-unique-3-digit-even-numbers) |
+## Tree
+|  |
+| ------- |
+| [0100-same-tree](https://github.com/RYHarish/Leetcode/tree/master/0100-same-tree) |
+## Depth-First Search
+|  |
+| ------- |
+| [0100-same-tree](https://github.com/RYHarish/Leetcode/tree/master/0100-same-tree) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0100-same-tree](https://github.com/RYHarish/Leetcode/tree/master/0100-same-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [0100-same-tree](https://github.com/RYHarish/Leetcode/tree/master/0100-same-tree) |
 <!---LeetCode Topics End-->
