@@ -36,12 +36,14 @@
 | [0101-symmetric-tree](https://github.com/RYHarish/Leetcode/tree/master/0101-symmetric-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/RYHarish/Leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0785-is-graph-bipartite](https://github.com/RYHarish/Leetcode/tree/master/0785-is-graph-bipartite) |
+| [0886-possible-bipartition](https://github.com/RYHarish/Leetcode/tree/master/0886-possible-bipartition) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [0100-same-tree](https://github.com/RYHarish/Leetcode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/RYHarish/Leetcode/tree/master/0101-symmetric-tree) |
 | [0785-is-graph-bipartite](https://github.com/RYHarish/Leetcode/tree/master/0785-is-graph-bipartite) |
+| [0886-possible-bipartition](https://github.com/RYHarish/Leetcode/tree/master/0886-possible-bipartition) |
 ## Binary Tree
 |  |
 | ------- |
@@ -60,16 +62,20 @@
 |  |
 | ------- |
 | [0785-is-graph-bipartite](https://github.com/RYHarish/Leetcode/tree/master/0785-is-graph-bipartite) |
+| [0886-possible-bipartition](https://github.com/RYHarish/Leetcode/tree/master/0886-possible-bipartition) |
 ## Graph Theory
 |  |
 | ------- |
 | [0785-is-graph-bipartite](https://github.com/RYHarish/Leetcode/tree/master/0785-is-graph-bipartite) |
+| [0886-possible-bipartition](https://github.com/RYHarish/Leetcode/tree/master/0886-possible-bipartition) |
 ## Graph Coloring
 |  |
 | ------- |
 | [0785-is-graph-bipartite](https://github.com/RYHarish/Leetcode/tree/master/0785-is-graph-bipartite) |
+| [0886-possible-bipartition](https://github.com/RYHarish/Leetcode/tree/master/0886-possible-bipartition) |
 ## Bipartite Graph
 |  |
 | ------- |
 | [0785-is-graph-bipartite](https://github.com/RYHarish/Leetcode/tree/master/0785-is-graph-bipartite) |
+| [0886-possible-bipartition](https://github.com/RYHarish/Leetcode/tree/master/0886-possible-bipartition) |
 <!---LeetCode Topics End-->
