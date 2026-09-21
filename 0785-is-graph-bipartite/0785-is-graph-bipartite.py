@@ -1,19 +1,14 @@
 class Solution(object):
-    def bfs_check(self, graph, colour, node):
-        
-        que = deque([node])
-        colour[node] = 0
-        while que:
-            node = que.pop()
-            neighbors = graph[node]
-            for neighbor in neighbors:
-                if colour[neighbor] == -1:
-                    colour[neighbor] = 1 - colour[node]
-                    que.append(neighbor)
-                if colour[neighbor] == colour[node]:
+    def dfs_check(self, graph, node, colour):
+        for n in graph[node]:
+            if colour[n] == -1:
+                colour[n] = 1 - colour[node] 
+                if not self.dfs_check(graph, n, colour):
                     return False
+            elif colour[n] == colour[node]:
+                return False
         return True
-
+        
     def isBipartite(self, graph):
         """
         :type graph: List[List[int]]
@@ -21,11 +16,13 @@ class Solution(object):
         """
         n = len(graph)
         colour = [-1] * n
+
         for node in range(n):
             if colour[node] == -1:
-                if not self.bfs_check(graph, colour, node):
+                colour[node] = 0
+                if not self.dfs_check(graph, node, colour):
                     return False
+        
         return True
-        
+    
 
-        
