@@ -35,6 +35,7 @@
 | [0100-same-tree](https://github.com/RYHarish/Leetcode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/RYHarish/Leetcode/tree/master/0101-symmetric-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/RYHarish/Leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0744-network-delay-time](https://github.com/RYHarish/Leetcode/tree/master/0744-network-delay-time) |
 | [0785-is-graph-bipartite](https://github.com/RYHarish/Leetcode/tree/master/0785-is-graph-bipartite) |
 | [0886-possible-bipartition](https://github.com/RYHarish/Leetcode/tree/master/0886-possible-bipartition) |
 ## Breadth-First Search
@@ -42,6 +43,7 @@
 | ------- |
 | [0100-same-tree](https://github.com/RYHarish/Leetcode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/RYHarish/Leetcode/tree/master/0101-symmetric-tree) |
+| [0744-network-delay-time](https://github.com/RYHarish/Leetcode/tree/master/0744-network-delay-time) |
 | [0785-is-graph-bipartite](https://github.com/RYHarish/Leetcode/tree/master/0785-is-graph-bipartite) |
 | [0886-possible-bipartition](https://github.com/RYHarish/Leetcode/tree/master/0886-possible-bipartition) |
 ## Binary Tree
@@ -66,6 +68,7 @@
 ## Graph Theory
 |  |
 | ------- |
+| [0744-network-delay-time](https://github.com/RYHarish/Leetcode/tree/master/0744-network-delay-time) |
 | [0785-is-graph-bipartite](https://github.com/RYHarish/Leetcode/tree/master/0785-is-graph-bipartite) |
 | [0886-possible-bipartition](https://github.com/RYHarish/Leetcode/tree/master/0886-possible-bipartition) |
 ## Graph Coloring
@@ -78,4 +81,16 @@
 | ------- |
 | [0785-is-graph-bipartite](https://github.com/RYHarish/Leetcode/tree/master/0785-is-graph-bipartite) |
 | [0886-possible-bipartition](https://github.com/RYHarish/Leetcode/tree/master/0886-possible-bipartition) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0744-network-delay-time](https://github.com/RYHarish/Leetcode/tree/master/0744-network-delay-time) |
+## Shortest Path
+|  |
+| ------- |
+| [0744-network-delay-time](https://github.com/RYHarish/Leetcode/tree/master/0744-network-delay-time) |
+## Dijkstra's Algorithm
+|  |
+| ------- |
+| [0744-network-delay-time](https://github.com/RYHarish/Leetcode/tree/master/0744-network-delay-time) |
 <!---LeetCode Topics End-->
